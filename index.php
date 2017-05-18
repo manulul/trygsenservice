@@ -8,10 +8,18 @@
 
        	<link rel="stylesheet" type="text/css" href="css/style.sass">
        	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+       	<script src="assets/vegas/vegas.min.js"></script>
+       	<link rel="stylesheet" type="text/css" href="assets/vegas/vegas.css">
+
+
+       	
+
 
 </head>
 
 <body>
+			
+		
 
 		<main>
 				<header>
@@ -19,11 +27,11 @@
 						<nav>
 								<img src="images/logo.png" alt="trygsen service logo">	
 									<ul>
-										<li>Produkter</li>
-										<li>Kontakt</li>
-										<li>Galleri</li>
-										<li>Generelle vilkår</li>
-										<li>Om os</li>
+										<li><a href="produkter.php">Produkter</a></li>
+										<li><a href="kontakt.php">Kontakt</a></li>
+										<li><a href="galleri.php">Galleri</a></li>
+										<li><a href="vilkaar.php">Generelle vilkår</a></li>
+										<li><a href="om.php">Om os</a></li>
 									</ul>
 						</nav>
 
@@ -31,9 +39,19 @@
 
 
 				<section>
-							
+<script>
+							$(function() {
+   								 $('body').vegas({
+       									 slides: [
+            						{ src: 'images/suckit.png' },
+           							{ src: 'images/pink.png' },
+            						{ src: 'images/img3.jpg' }
+        										],
+        										animation: 'kenburns'
+ 								   });
+								});
 
-
+			</script>
 				</section>
 		</main>
 
